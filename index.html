@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="src/building.js"></script>
+        <script src="src/upgrade.js"></script>
+        <script src="src/WholeNote.js"></script>
+        <script src="src/main.js"></script>
+        <title>Pitbull Jr's Song Clicker</title>
+    </head>
+    <body>
+        <header>
+            <h1>Pitbull Jr's Song Clicker</h1>
+            <h2>
+                Pitbull Jr needs some music tones for his Massive Concert in his Number 1 City Miami FL.
+                 Pitbull Jr and his Cheerleaders need the players help to click on the music tone to help them sing and dance to get the crowd go wild.
+            </h2>
+        </header>
+
+        <div class="outer">
+            <div class="click">
+                <h3>Score: <span class="score" id="score">0</span></h3>
+
+                <button type="button" onclick="scorePlusPlus()">Sing</button>
+            </div>
+
+            <div class="store">
+                <div class="buildings">
+                    <div class="store-title">
+                        <h4>Buildings:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyHalfNote"
+                        onclick="HalfNote.purchase()"
+                    >
+                        Buy HalfNote
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyquarterNote"
+                        onclick="quarterNote.purchase()"
+                    >
+                        Buy quarterNote
+                    </button>
+
+                    <!-- Add more building buttons here -->
+                </div>
+                <div class="upgrades">
+                    <div class="store-title">
+                        <h4>Upgrades:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="WholeNote"
+                        onclick="WholeNote.purchase()"
+                    >
+                        Buy WholeNote 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
